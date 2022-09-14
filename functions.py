@@ -4,13 +4,13 @@ import tkinter
 
 
 def create_password():
-    sgins = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x',
+    signs = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x',
              'c', 'v', 'b', 'n', 'm', ',',
              '.', '/', '?', '>', '<', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '!', '@', '#', '$', '%', '^',
              '&', '*', '(', ')']
     password=""
     for _ in range(15):
-        password += sgins.random.choice()
+        password += random.choice(signs)
     return password
 
 
